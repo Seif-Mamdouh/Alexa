@@ -3,8 +3,11 @@ import pyttsx3
 import pywhatkit
 
 listner = sr.Recognizer()
+
 engine = pyttsx3.init()
+
 voices = engine.getProperty('voices')
+
 engine.setProperty('voice', voices[1].id)
 
 
